@@ -1,3 +1,6 @@
+import navbar from '../views/navbar';
+import presentation from '../views/presentation';
+
 const Dashboard = class Dashboard {
   constructor(params) {
     this.el = document.querySelector('#root');
@@ -9,6 +12,8 @@ const Dashboard = class Dashboard {
 
   async render() {
     return `
+    <div>${navbar()}</div>
+    <div>${presentation()}</div>
     `;
   }
 
