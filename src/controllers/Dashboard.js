@@ -1,5 +1,5 @@
 import navbar from '../views/navbar';
-import presentation from '../views/presentation';
+import main from '../views/main';
 
 const Dashboard = class Dashboard {
   constructor(params) {
@@ -13,7 +13,7 @@ const Dashboard = class Dashboard {
   async render() {
     return `
     <div>${navbar()}</div>
-    <div>${presentation()}</div>
+    <div>${main()}</div>
     `;
   }
 
